@@ -9,7 +9,6 @@ interface Character {
 
 @Component({
   templateUrl: './dragonball-page.component.html',
-  imports: [NgClass],
 })
 export class DragonBallPageComponent {
   name = signal('Gohan');
