@@ -1,7 +1,7 @@
 import { ChangeDetectionStrategy, Component } from '@angular/core';
 
 @Component({
-  selector: 'app-search-page',
+  selector: 'gif-search-page',
   imports: [],
   templateUrl: './search-page.html',
   changeDetection: ChangeDetectionStrategy.OnPush,

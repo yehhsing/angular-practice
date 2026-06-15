@@ -3,7 +3,7 @@ import { RouterOutlet } from '@angular/router';
 import { SideMenu } from '../../components/side-menu/side-menu';
 
 @Component({
-  selector: 'app-dashboard-page',
+  selector: 'gif-dashboard-page',
   templateUrl: './dashboard-page.html',
   changeDetection: ChangeDetectionStrategy.OnPush,
   imports: [RouterOutlet, SideMenu],
