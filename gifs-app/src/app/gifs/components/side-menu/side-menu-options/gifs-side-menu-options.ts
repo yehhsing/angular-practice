@@ -1,5 +1,6 @@
-import { ChangeDetectionStrategy, Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
 import { RouterLink, RouterLinkActive } from '@angular/router';
+import { GifService } from 'src/app/gifs/services/gifs.service';
 interface MenuOption {
   icon: string;
   label: string;
@@ -10,9 +11,10 @@ interface MenuOption {
   selector: 'gifs-side-menu-options',
   imports: [RouterLink, RouterLinkActive],
   templateUrl: './gifs-side-menu-options.html',
-  changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class SideMenuOptions {
+  gifService = inject(GifService);
+
   menuOptions: MenuOption[] = [
     {
       icon: 'fa-solid fa-chart-line',
