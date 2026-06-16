@@ -5,6 +5,11 @@ import { map } from 'rxjs';
 import { GifService } from '../../services/gifs.service';
 import { List } from '../../components/list/list';
 
+// function loadFromLocalStorage(): Character[] {
+//   const characters = localStorage.getItem('characters');
+//   return characters ? JSON.parse(characters) : [];
+// }
+
 @Component({
   selector: 'gif-history',
   imports: [List],
